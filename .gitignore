@@ -15,7 +15,6 @@ pids
 # Dependency directories
 jspm_packages/
 typings/
-Backend/JossaDb.db
 
 # Optional npm cache directory
 .npm
