@@ -27,7 +27,7 @@ const Carousel = () => {
     };
 
     return (
-        <Slider {...settings} className='rounded-lg '>
+        <Slider {...settings} className='rounded-lg transition duration-300 ease-in-out transform hover:scale-105'>
             <div>
                 <img src={IITG} alt="Slide 1" className="w-full h-auto shadow-fuchsia-200 shadow-xl" />
             </div>

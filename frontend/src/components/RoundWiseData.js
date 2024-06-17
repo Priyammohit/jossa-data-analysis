@@ -94,7 +94,7 @@ const RoundWiseAnalysisChart = ({ data }) => {
 
 
     return (
-        <div className="chart-container mt-10 flex flex-col gap-10 justify-center items-center max-w-fit md:w-full rounded-lg border-fuchsia-500 border-solid shadow-fuchsia-200 border-2 p-5 shadow-xl">
+        <div className="bg-white chart-container mt-10 flex flex-col gap-10 justify-center items-center max-w-fit md:w-full rounded-lg border-fuchsia-500 border-solid shadow-fuchsia-200 border-2 p-5 shadow-xl">
             <h2 className='text-3xl text-center font-bold from-purple-600 via-pink-600 to-blue-600 bg-gradient-to-r bg-clip-text text-transparent'> Round Wise Analysis</h2>
             <Line style={chartStyles} ref={chartRef} data={chartData} options={options} />
         </div>

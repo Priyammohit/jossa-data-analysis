@@ -10,6 +10,8 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import FormLabel from '@mui/material/FormLabel';
 import YearWiseAnalysisData from '../components/YearWiseAnalysisData';
 import RoundWiseAnalysisData from '../components/RoundWiseData';
+import Navbar from '../components/Navbar';
+import Footer from '../components/footer';
 
 const DataAnalysis = () => {
 
@@ -125,6 +127,8 @@ const DataAnalysis = () => {
     };
 
     return (
+        <div style={{ background: 'linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%)' }}>
+            <Navbar/>
         <div className='flex flex-col gap-10 justify-center items-center w-full'>
             <div className='flex flex-col m-10 gap-5 justify-center items-center w-9/12'>
                 <h1 className='text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r to-emerald-600 from-sky-400'>Jossa Data Analysis</h1>
@@ -303,6 +307,8 @@ const DataAnalysis = () => {
                 </form>
                 {flag ? formData.exam=='Year Wise'?<YearWiseAnalysisData data={data} />: <RoundWiseAnalysisData data={data} />: <div></div>}
             </div>
+        </div>
+        <Footer/>
         </div>
     );
 };
