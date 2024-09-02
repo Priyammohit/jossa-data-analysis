@@ -48,7 +48,7 @@ const DataAnalysis = () => {
         e.preventDefault();
         try {
             console.log(formData);  // Log formData before making the request
-            const response = await axios.get('http://localhost:4000/api/dataAnalysis', {
+            const response = await axios.get('https://jossa-data-analysis.onrender.com/api/dataAnalysis', {
                 params: formData
             });
             console.log(response.data);  // Log response data
@@ -62,7 +62,7 @@ const DataAnalysis = () => {
 
     const fetchInstitute = async (selectedYear, instituteTypes) => {
         try {
-            const response = await axios.get('http://localhost:4000/api/distinct', {
+            const response = await axios.get('https://jossa-data-analysis.onrender.com/api/distinct', {
                 params: {
                     year: selectedYear,
                     institute_types: instituteTypes,
@@ -104,7 +104,7 @@ const DataAnalysis = () => {
 
     const fetchPrograms = async (selectedYear, instituteTypes,institute) => {
         try {
-            const response = await axios.get('http://localhost:4000/api/distinct', {
+            const response = await axios.get('https://jossa-data-analysis.onrender.com/api/distinct', {
                 params: {
                     year: selectedYear,
                     institute_types: instituteTypes,

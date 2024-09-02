@@ -13,7 +13,7 @@ const Home = () => {
             <HeroSection/>
             <FeatureSection/>
             <ThirdSection/>
-            <MeetTheTeam/>
+            {/* <MeetTheTeam/> */}
             <Footer/>
             {/* Additional sections or components can be added here */}
         </div>

@@ -42,7 +42,7 @@ const Collagepredictor = () => {
         e.preventDefault();
         try {
             
-            const response = await axios.get('http://localhost:4000/api/graph_data_roundwise', {
+            const response = await axios.get('https://jossa-data-analysis.onrender.com/api/graph_data_roundwise', {
                 params: formData
             });
             setData(response.data);
